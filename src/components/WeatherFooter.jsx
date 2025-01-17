@@ -7,9 +7,6 @@ const WeatherFooter = function () {
         <Col className="text-light fst-italic" xs={12} md={6}>
           <p>&copy; 2025 EpiWeather. All rights reserved.</p>
         </Col>
-        <Col className="text-light fst-italic" xs={12} md={6}>
-          <p>Developed by Chiara Nughedu</p>
-        </Col>
       </Row>
     </Container>
   );

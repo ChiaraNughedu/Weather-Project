@@ -3,12 +3,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
-  font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_1280.jpg);
+  font-family: "Inter", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_1280.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
-  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -17,20 +18,19 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  
 }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);  
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);  
+    transform: rotate(360deg);
   }
 }
 
 img {
-  animation: rotate 5s infinite linear;  /* Applica l'animazione 'rotate' */
+  animation: rotate 5s infinite linear;
 }
 
 .pComponents p {
@@ -41,11 +41,11 @@ img {
 }
 
 h1 {
-    font-weight: bold; 
-    font-size: 2.5rem; 
-    color: #9cd2f7; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
-    margin: 0;
-  }
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #9cd2f7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}

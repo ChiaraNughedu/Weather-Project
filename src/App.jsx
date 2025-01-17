@@ -9,13 +9,19 @@ import AppBody from "./components/AppBody";
 import WeatherFooter from "./components/WeatherFooter";
 
 function App() {
-  const [selectedCity, setSelectedCity] = useState("Parigi");
+  const [selectedCity, setSelectedCity] = useState("");
+
+  const handleCityChange = (city) => {
+    setSelectedCity(city);
+  };
 
   return (
     <>
-      <WeatherNav />
-      <CitySelect onCityChange={(city) => setSelectedCity(`${city}`)} />
-      <AppBody city={selectedCity} />
+       <WeatherNav />
+      <CitySelect onCityChange={handleCityChange} />
+      <>
+      {selectedCity && <AppBody city={selectedCity} />}
+      </>
       <WeatherFooter />
     </>
   );

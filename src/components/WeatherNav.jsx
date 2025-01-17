@@ -19,7 +19,6 @@ const WeatherNav = function() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <h1 className="text-uppercase fst-italic">EpiWeather</h1>
-          
           </Nav>
         </Navbar.Collapse>
       </Container>

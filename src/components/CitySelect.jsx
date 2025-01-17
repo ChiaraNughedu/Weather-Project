@@ -13,8 +13,8 @@ const CitySelect = function ({ onCityChange }) {
     <Container fluid={true}>
       <Row className="justify-content-center">
         <Col xs={12} md={8}>
-          <h1 className=" my-1 fs-4">Dove ti trovi?</h1>
-          <Form.Select aria-placeholder="Seleziona la città" onChange={handleCityChange}>
+          <h1 className="fst-italic my-1 fs-4">Dove ti trovi?</h1>
+          <Form.Select aria-placeholder="Seleziona la città" onChange={handleCityChange} >
             <option>Parigi</option>
             <option>New York</option>
             <option>Istanbul</option>

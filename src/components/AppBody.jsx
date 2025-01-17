@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 const AppBody = function ({ city }) {
@@ -10,7 +10,7 @@ const AppBody = function ({ city }) {
     const key = "4b16c95e11d22feaaaaa45d129396fb5";
     const [cityName, country] = city.split(",");
 
-    console.log(`Fetching weather for ${cityName}, ${country}`); // Debug
+    console.log(`Fetching weather for ${cityName}, ${country}`);
 
     try {
       const response = await fetch(
@@ -86,7 +86,7 @@ const AppBody = function ({ city }) {
               <Card.Text>
                 <h6 className="fw-bold text-uppercase">{cityWeather.description}</h6>
               </Card.Text>
-              <Card.Text>
+              <Card.Text className="pComponents">
                 <p> Temperatura: {cityWeather.temperature}°C</p>
                 <p> Temperatura percepita: {cityWeather.feels_like}°C</p>
                 <p> Temperatura minima: {cityWeather.temp_min}°C</p>
@@ -95,10 +95,9 @@ const AppBody = function ({ city }) {
                 <p> Vento: {cityWeather.windSpeed} m/s</p>
               </Card.Text>
               <hr />
-              <Card.Text className="text-center">
-                Timezone: {cityWeather.timezone}{" "}
+              <Card.Text className="pComponents text-center">
+                <p>Timezone: {cityWeather.timezone}{" "} </p>
               </Card.Text>
-    
             </Card.Body>
           </Card>
         </Col>

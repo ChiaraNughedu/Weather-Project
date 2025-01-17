@@ -6,6 +6,7 @@ import './App.css'
 import WeatherNav from './components/WeatherNav'
 import CitySelect from './components/CitySelect'
 import AppBody from './components/AppBody'
+import WeatherFooter from './components/WeatherFooter'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
      <WeatherNav/>
      <CitySelect onCityChange={(city) => setSelectedCity(`${city}`)} />
      <AppBody city={selectedCity}/>
+     <WeatherFooter/>
     </>
   )
 }
